@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Event Feedback Form</h1>
+    <p id="description">Thank you for taking the time to help us improve our events</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Enter Your First and Last Name: <input id="name" name="first-name" type="text" required placeholder="John Johnson" /></label>
+        <label id="email-label" for="email">Enter Your Email: <input id="email" name="email" type="email" required placeholder="John@mail.com" /></label>
+        <label for="number" id="number-label">Enter your age: <input id="number" name="number" type="number" min="18" max="130" pattern="[0-9]" required placeholder="min age 18" /></label>
+        <label for="dropdown">What is your gender?
+          <select id="dropdown" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+            <option value="3">Other</option>
+            <option value="4">Don't want to answer</option>
+          </select>
+        </label>
+        
+          <label for="student" class="radio"><input id="student" type="radio" name="attendant-type" value="student" class="inline" /> Student</label><label for="educator" class="radio"><input id="educator" type="radio" name="attendant-type" value="educator" class="inline" /> Educator</label>
+    
+        
+        <label for="feedback" class="feedback">Provide your feedback about the event here<textarea id="feedback" name="new-feedback" rows="3" cols="30" placeholder="It was great!..."></textarea>
+        </label>
+        <label for="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" value="accept-terms" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+        </label>
+        <label for="share">
+          <input id="share" type="checkbox" required name="share-info" class="inline" value="accept-share" /> I agree to share my information with other participants</a>
+        </label>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
